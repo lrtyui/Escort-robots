@@ -1,0 +1,143 @@
+/**
+ * Copyright 2022 Beijing Volcanoengine Technology Ltd. All Rights Reserved.
+ * SPDX-license-identifier: BSD-3-Clause
+ */
+
+.media-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 40px;
+  margin-right: 16px;
+  overflow: hidden;
+  background: #f2f3f5;
+  border-radius: 20px;
+
+  &[data-published='true'] {
+    background: #1d2129;
+  }
+}
+
+.media-button-icon {
+  display: flex;
+  width: 32px;
+  height: 100%;
+
+  :global {
+    img {
+      transform: scale(0.6);
+    }
+  }
+
+  &:hover {
+    background: #e4e5e9;
+  }
+
+  &[data-published='true'] {
+    background: #1d2129;
+
+    &:hover {
+      background: rgb(52, 55, 62);
+    }
+
+    &:active {
+      background: rgb(63, 66, 73);
+    }
+  }
+}
+
+.media-select-btn {
+  display: flex;
+  align-items: center;
+  width: 24px;
+  height: 100%;
+
+  :global {
+    img {
+      transform: scale(0.6);
+    }
+  }
+
+  &:hover {
+    background: #e4e5e9;
+  }
+
+  &[data-published='true'] {
+    background: #1d2129;
+
+    &:hover {
+      background: rgb(52, 55, 62);
+    }
+
+    &:active {
+      background: rgb(63, 66, 73);
+    }
+  }
+}
+
+.media-devices-list {
+  position: absolute;
+  bottom: 60px;
+  padding: 30px;
+
+  &[data-published='true'] {
+    bottom: 30px;
+  }
+
+  &::after {
+    position: absolute;
+    bottom: 24px;
+    left: 50%;
+    display: block;
+    width: 10px;
+    height: 10px;
+    background: #fff;
+    transform: rotateZ(45deg) translateX(-14%);
+    content: '';
+  }
+
+  :global {
+    .media-devices-list-content {
+      padding: 16px 16px 4px;
+      background: #fff;
+      border-radius: 2px;
+    }
+
+    .ant-radio-group {
+      display: flex;
+      flex-direction: column;
+
+      .ant-radio-wrapper {
+        margin-bottom: 8px;
+        color: #1d2129;
+        font-weight: 400;
+        font-size: 12px;
+        font-family: 'PingFang SC';
+        white-space: nowrap;
+
+        .ant-radio {
+          .ant-radio-inner {
+            width: 14px;
+            height: 14px;
+          }
+        }
+
+        .ant-radio.ant-radio-checked {
+          .ant-radio-inner {
+            border-color: #1664ff;
+            border-width: 7px;
+
+            &::after {
+              width: 10px;
+              height: 10px;
+              margin-top: -5px;
+              margin-left: -5px;
+              background-color: #fff;
+            }
+          }
+        }
+      }
+    }
+  }
+}

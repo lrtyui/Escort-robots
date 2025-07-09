@@ -1,0 +1,7 @@
+mpu6050.c:8:9:BSP_MPU6050_ReadReg	1
+mpu6050.c:15:6:BSP_MPU6050_ReadMultiReg	1
+mpu6050.c:20:6:BSP_MPU6050_WriteReg	1
+mpu6050.c:26:6:BSP_MPU6050_WriteMultiReg	1
+mpu6050.c:32:9:BSP_MPU6050_Read_WHOAMI	1
+mpu6050.c:37:9:BSP_MPU6050_Init	5
+mpu6050.c:65:6:BSP_MPU6050_UpdateSensors	1

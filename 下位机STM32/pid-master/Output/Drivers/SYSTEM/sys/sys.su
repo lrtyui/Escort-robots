@@ -1,0 +1,9 @@
+../Drivers/CMSIS/Include/core_cm3.h:1762:34:__NVIC_SystemReset	4	static,ignoring_inline_asm
+../Drivers/SYSTEM/sys/sys.c:34:6:sys_nvic_set_vector_table	16	static
+../Drivers/SYSTEM/sys/sys.c:45:6:sys_wfi_set	4	static,ignoring_inline_asm
+../Drivers/SYSTEM/sys/sys.c:55:6:sys_intx_disable	4	static,ignoring_inline_asm
+../Drivers/SYSTEM/sys/sys.c:65:6:sys_intx_enable	4	static,ignoring_inline_asm
+../Drivers/SYSTEM/sys/sys.c:76:6:sys_msr_msp	24	static,ignoring_inline_asm
+../Drivers/SYSTEM/sys/sys.c:86:6:sys_standby	16	static
+../Drivers/SYSTEM/sys/sys.c:97:6:sys_soft_reset	8	static
+../Drivers/SYSTEM/sys/sys.c:108:6:sys_stm32_clock_init	80	static

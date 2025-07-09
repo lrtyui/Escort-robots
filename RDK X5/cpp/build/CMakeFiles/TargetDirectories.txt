@@ -1,0 +1,3 @@
+/home/wheeltec/3rdparty/rdk_model_zoo/demos/detect/YOLOv8/YOLOv8-Detect_YUV420SP/cpp/build/CMakeFiles/main.dir
+/home/wheeltec/3rdparty/rdk_model_zoo/demos/detect/YOLOv8/YOLOv8-Detect_YUV420SP/cpp/build/CMakeFiles/edit_cache.dir
+/home/wheeltec/3rdparty/rdk_model_zoo/demos/detect/YOLOv8/YOLOv8-Detect_YUV420SP/cpp/build/CMakeFiles/rebuild_cache.dir

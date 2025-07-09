@@ -1,0 +1,15 @@
+rosrun teleop_twist_keyboard teleop_twist_keyboard.py
+
+
+roslaunch nav gmapping.launch
+
+
+roslaunch nav nav.launch
+
+
+python handle_request_main.py
+
+python main.py
+
+
+roslaunch rokin keyboard_teleop.launch

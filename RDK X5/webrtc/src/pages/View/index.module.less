@@ -1,0 +1,172 @@
+/**
+ * Copyright 2022 Beijing Volcanoengine Technology Ltd. All Rights Reserved.
+ * SPDX-license-identifier: BSD-3-Clause
+ */
+
+.container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: #272e3b;
+}
+
+.stream-player {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  width: 100%;
+  height: calc(100% - 50px);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  height: 50px;
+  padding: 0 24px;
+  font-weight: 400;
+  font-family: 'PingFang SC';
+  font-style: normal;
+  background-color: #1f2127;
+
+  :global {
+    img {
+      width: 221px;
+    }
+
+    .version {
+      margin-right: 40px;
+      color: #86909c;
+      font-size: 12px;
+    }
+
+    .ant-select {
+      width: 90px;
+      margin-right: 40px;
+      background-color: #1f2127 !important;
+
+      .ant-select-selector {
+        color: #fff;
+        background-color: #1f2127 !important;
+        border: none !important;
+      }
+
+      .ant-select-arrow {
+        color: #fff;
+
+        .anticon-down {
+          transform: scale(0.8);
+        }
+      }
+    }
+
+    .ant-select-focused {
+      .ant-select-selector {
+        box-shadow: none !important;
+      }
+    }
+
+    .doc_link {
+      margin-right: 40px;
+      color: #fff;
+      font-size: 14px;
+      line-height: 22px;
+
+      a,
+      a:active,
+      a:hover {
+        color: #fff;
+      }
+    }
+
+    .avatar-group {
+      position: relative;
+      display: inline-block;
+      user-select: none;
+
+      .avatar {
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        margin-right: 10px;
+        color: #fff;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 30px;
+        text-align: center;
+        background: #505867;
+        border-radius: 50%;
+      }
+
+      .username {
+        color: #fff;
+      }
+
+      .avatar-menu {
+        position: absolute;
+        top: 45px;
+        left: -16px;
+        width: 100px;
+        height: 40px;
+        color: #cacdd3;
+        font-size: 12px;
+        line-height: 40px;
+        text-align: center;
+        background: #111318;
+        border-radius: 2px;
+        user-select: none;
+
+        .logout-btn {
+          display: inline-block;
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+.pull {
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  :global {
+    .ant-btn {
+      min-width: 48px;
+      height: 48px;
+      font-weight: 500;
+      font-size: 12px;
+      font-family: 'PingFang SC';
+      font-style: normal;
+      border-radius: 24px;
+      transition: none !important;
+    }
+
+    .ant-btn-dangerous.ant-btn-primary {
+      background: #1d2129;
+
+      &:focus {
+        background: #1d2129;
+      }
+
+      &:hover {
+        background: #1d2129;
+      }
+    }
+
+    .ant-btn-primary {
+      background: #165dff;
+      border: none;
+
+      .anticon {
+        margin-right: 8px;
+        font-weight: bold;
+      }
+
+      &:focus {
+        background: #165dff;
+      }
+    }
+  }
+}
